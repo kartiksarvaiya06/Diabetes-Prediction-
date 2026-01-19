@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .result-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .result {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #185a9d;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: #185a9d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            background: #144b82;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="result-card">
+    <h1>Prediction Result</h1>
+    <div class="result">
+        Person is {{ result }}
+    </div>
+
+    <a href="/">Predict Again</a>
+</div>
+
+</body>
+</html>
